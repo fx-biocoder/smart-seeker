@@ -14,8 +14,8 @@
     <header class="padre">
         <div class="logo">
             <img src="https://via.placeholder.com/140" alt="logo">
-        </div>  
-        <nav >
+        </div>
+        <nav>
             <ul class="menu">
                 <li><a href="#homepage">Home</a></li>
                 <li><a href="#section-1">Load files</a></li>
@@ -29,34 +29,25 @@
     <!-- Homepage-->
     <!-- Esto sería lo primero que ve el user al entrar al sitio -->
     <!-- Debe contener una imagen o video de fondo, y un botón para ir a la sección siguiente-->
-    <section id="homepage">
-        <!-- Completar -->
+    <section class="container">
+        <div class="video-container">
+            <video src="/img/Animated DNA helix.mp4" autoplay loop></video>
+        </div>
+        <div class="titulo">
+            <h1>Nombre de la app</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ducimus. Molestiae cupiditate odio molestias corrupti ut? Odit delectus eius consequatur!</p>
+        </div>
 
     </section>
 
     <!-- Section 1: Carga de archivos -->
     <section id="section-1">
         <div class="formulario">
-            <form action="Carga de archivos" method="post">
+            <!--resolver tema de drag and drop-->
                 <h2>Carga de archivos </h2>
-                <ul>
-                 <li>
-                   <label for="Archivo">Archivo 1</label>
-                   <input type="file" id="file1" name="file1">
-                 </li>
-                 <li>
-                    <label for="Archivo">Archivo 2</label>
-                    <input type="file" id="file2" name="file2">
-                 </li>
-                 <li>
-                    <label for="Archivo">Archivo 3</label>
-                    <input type="file" id="file3" name="file3">
-                 </li>
-                 <li class="button">
-                    <button type="submit">Enviar</button>
-                </li>
-
-            </form>
+                <div id="drop_zone" ondrop="dropHandler(event);">
+                    <p>Arrastra y suelta uno o más archivos a esta zona ...</p>
+                  </div>
         </div>
     </section>
 
@@ -64,7 +55,9 @@
     <section id="section-2">
         <div class="desc">
             <h2>Descripción del funcionamiento de la app </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam atque rem delectus?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio
+                adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam
+                atque rem delectus?</p>
         </div>
 
     </section>
@@ -73,7 +66,9 @@
     <section id="section-3">
         <div class="int">
             <h2>Integrantes del equipo </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam atque rem delectus?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio
+                adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam
+                atque rem delectus?</p>
         </div>
 
     </section>
@@ -82,13 +77,11 @@
     <footer>
         <div class="foot">
             <h3>Copyright 2022</h2>
-            <p>Contacto</p>
-           
+                <p>Contacto</p>
+
         </div>
 
     </footer>
 </body>
 
 </html>
-
-
