@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
     <title>Proyecto app Bioinformática</title>
 </head>
 
 <body>
     <!--Header-->
-    <header class="padre">
+    <header class="header">
         <div class="logo">
             <img src="https://via.placeholder.com/140" alt="logo">
         </div>
-        <nav>
+        <nav class="nav">
             <ul class="menu">
                 <li><a href="#homepage">Home</a></li>
                 <li><a href="#section-1">Load files</a></li>
-                <li><a href="#section-2"></a>About the app</li>
+                <li><a href="#section-2">About the app</a></li>
                 <li><a href="#section-3">The team</a></li>
                 <li><a href="#section-4">Contact us</a></li>
             </ul>
@@ -29,26 +32,32 @@
     <!-- Homepage-->
     <!-- Esto sería lo primero que ve el user al entrar al sitio -->
     <!-- Debe contener una imagen o video de fondo, y un botón para ir a la sección siguiente-->
-    <section class="container">
+    <section class="homepage">
         <div class="video-container">
             <video src="/img/Animated DNA helix.mp4" autoplay loop></video>
         </div>
         <div class="titulo">
             <h1>Nombre de la app</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ducimus. Molestiae cupiditate odio molestias corrupti ut? Odit delectus eius consequatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ducimus. Molestiae cupiditate
+                odio molestias corrupti ut? Odit delectus eius consequatur!</p>
         </div>
 
     </section>
 
     <!-- Section 1: Carga de archivos -->
     <section id="section-1">
-        <div class="formulario">
-            <!--resolver tema de drag and drop-->
-                <h2>Carga de archivos </h2>
-                <div id="drop_zone" ondrop="dropHandler(event);">
-                    <p>Arrastra y suelta uno o más archivos a esta zona ...</p>
-                  </div>
+        <h2>Carga de archivos </h2>
+        <div class="drop-area">             
+            <h2>Arrastra y suelta archivos</h2>
+            <span>O</span>
+            <button>Selecciona tus archivos</button>
+            <input type="file" name="" id="input-file" hidden multiple>
         </div>
+        <div id="preview"></div>
+
+        <script src="/js/index.js"></script>
+
+        
     </section>
 
     <!-- Section 2: Descripción del funcionamiento de la app-->
@@ -57,7 +66,9 @@
             <h2>Descripción del funcionamiento de la app </h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio
                 adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam
-                atque rem delectus?</p>
+                atque rem delectus?</p> 
+            <img src="https://via.placeholder.com/300" alt="imagen">
+                       
         </div>
 
     </section>
