@@ -17,13 +17,13 @@ input.addEventListener("change", (e) =>{
 
 });
 
-dropArea.addEventListener("dragover" , (e) => {
+dropArea.addEventListener("dragover", (e) => {
     e.preventDefault();
     dropArea.classList.add("active");
     dragText.textContent = "Suelta para subir los archivos";
 });
 
-dropArea.addEventListener("dragleave" , (e) => {
+dropArea.addEventListener("dragleave", (e) => {
     e.preventDefault();
     dropArea.classList.remove("active");
     dragText.textContent = "Arrastra y suelta los archivos";
