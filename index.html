@@ -1,48 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
     <title>Proyecto app Bioinformática</title>
 </head>
+
 <body>
-   <!--Header-->
-   <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#homepage">Home</a></li>
-                <li><a href="#section-1">Load files</a></li>
-                <li><a href="#section-2"></a>About the app</li>
-                <li><a href="#section-3">The team</a></li>
-                <li><a href="#section-4">Contact us</a></li>
+
+    <!--Header-->
+    <header class="header">
+        <div class="logo">
+            <img src="https://via.placeholder.com/110" alt="logo">
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#homepage">HOME</a></li>
+                <li><a href="#section-1">LOAD FILES</a></li>
+                <li><a href="#section-2">ABOUT THE APP</a></li>
+                <li><a href="#section-3">THE TEAM</a></li>
+                <li><a href="#section-4">CONTACT</a></li>
             </ul>
         </nav>
-   </header>
+    </header>
 
-   <!-- Homepage-->
-   <!-- Esto sería lo primero que ve el user al entrar al sitio -->
-   <!-- Debe contener una imagen o video de fondo, y un botón para ir a la sección siguiente-->
-   <section id="homepage">
-        <!-- Completar -->
-   </section>
+    <!-- Homepage-->
+    <!-- Esto sería lo primero que ve el user al entrar al sitio -->
+    <!-- Debe contener una imagen o video de fondo, y un botón para ir a la sección siguiente-->
+    <section class="homepage">
+        <video src="/img/Biology DNA 4K Video Background Video - Loop Motion.mp4" autoplay loop mute></video>
+        <div class="titulo">
+            <h1>Nombre de la app</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ducimus. Molestiae cupiditate
+                odio molestias corrupti ut? Odit delectus eius consequatur!</p>
+        </div>
 
-   <!-- Section 1: Carga de archivos -->
-   <section id="section-1"></section>
+    </section>
 
-   <!-- Section 2: Descripción del funcionamiento de la app-->
-   <section id="section-2">
+    <!-- Section 1: Carga de archivos -->
+    <section id="section-1">
+        <h2>Carga de archivos </h2>
+        <div class="drop-area">             
+            <h2>Arrastre y suelte archivos</h2>
+            <span>O</span>
+            <button>Seleccione sus archivos</button>
+            <input type="file" name="" id="input-file" hidden multiple>
+        </div>
+        <div id="preview"></div>
 
-   </section>
+        <script src="/js/index.js"></script>
 
-   <!-- Section 3: Integrantes del equipo-->
-   <section id="section-3">
+        
+    </section>
 
-   </section>
+    <!-- Section 2: Descripción del funcionamiento de la app-->
+    <section id="section-2">
+        <div class="desc">
+            <h2>Descripción del funcionamiento de la app </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio
+                adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam
+                atque rem delectus?</p> 
+            <img src="https://via.placeholder.com/300" alt="imagen">
+                       
+        </div>
 
-   <!-- Footer - Contacto, redes sociales, quizás incluir un formulario -->
-   <footer>
+    </section>
 
-   </footer>
+    <!-- Section 3: Integrantes del equipo-->
+    <section id="section-3">
+        <div class="int">
+            <h2>Integrantes del equipo </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio
+                adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam
+                atque rem delectus?</p>
+        </div>
+
+    </section>
+
+    <!-- Footer - Contacto, redes sociales, quizás incluir un formulario -->
+    <footer>
+        <div class="foot">
+            <h3>Copyright 2022</h2>
+                <p>Contacto</p>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>
