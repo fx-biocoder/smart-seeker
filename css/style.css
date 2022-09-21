@@ -1,25 +1,25 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     border: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
-
+/* Header: logo y barra de navegación */
 .header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    background-color: white;
 
 }
-
-    .logo{
-
-    }
-
-    .nav{
-
+    a {
+        text-decoration: none;
     }
 
     .menu{
@@ -28,54 +28,39 @@
     }
 
         li {
-            /*width: 200px;*/
             list-style: none;   
         }
 
-
+/* Sección Homepage */
 .homepage {
-    position: relative;
+    border: 0;
+    padding: 0;
     width: 100%;
-    /*z-index: -1;*/
-    background-color:black;
-    background-size: cover;
-    background-position: center;
-    /*transition: all .1s ease-in-out;*/
-
+    background-color: black;
+    z-index: -2;
+        
 }
-    .video-container {
-        margin-top: 200px;
-        padding: 0;
+   
+    video {
+        position: relative;
+        object-fit: cover;
+        object-position: center center;
         width: 100%;
-        height: 40vh;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        z-index: -1;
-              
-
+        height: 100%;
+        z-index: 3;
+       
     }
 
     .titulo {
-        /*display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;*/
         width: 60%;
         margin: auto;
-        position: relative;
-        z-index: 2;
         color: whitesmoke;
+         
+    }
 
-    }*/
-.desc{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
 
+
+/* Section 1: Carga de archivos */
 #section-1{
     background-color: #F9F5EB;
     display: flex;
@@ -90,8 +75,8 @@
 
 .drop-area {
     border: 5px dashed #ddd;
-    height: 500px;
-    width: 700px;
+    height: 50%;
+    width: 70%;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -107,7 +92,7 @@
 
 
 .drop-area span{
-    font-size:25px;
+    font-size:20px;
 
 }
 
@@ -134,7 +119,7 @@
     margin-top: 10px;
 
 }
-.status-tex{
+.status-text{
     padding: 0 10px;
 
 }
@@ -147,24 +132,32 @@
     color: #ff0000;
 }
 
-
+/* Section 2: Descripción del funcionamiento de la app */ 
 #section-2{
-    background-color: #EAE3D2;
-    
-    
+    background-color: #EAE3D2;  
 }
+    .desc{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 
+
+/* Section 3: Integrantes del equipo */ 
 #section-3{
     background-color:#607EAA;
-    color: white;
-    
+    color: white;    
 }
 
+/* Footer */ 
 .foot{
     background-color: #243A73;
     color: white;
     
 }
+
+/* Media Queries*/
+/* PENDIENTE */
 
 /*
 @media screen and (max-width: 640px) {
