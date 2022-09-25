@@ -154,8 +154,30 @@
 .foot{
     background-color: #243A73;
     color: white;
-    
 }
+
+
+.form{
+  column-count: 2;
+  column-gap: 150px;
+  list-style: none;
+}
+
+div.info{
+    margin: 10px 20px;
+    float: left;
+    width: 350px;
+}
+div.info img{
+    width: 100%;
+    height: auto;
+}
+div.pie{
+    text-align: center;
+    padding: 10px;
+}
+
+
 
 /* Media Queries*/
 /* PENDIENTE */
