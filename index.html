@@ -10,17 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
     <title>Proyecto app Bioinformática</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
     <!--Header-->
+    <div class="portada">
     <header class="header">
-        <div class="logo">
-            <img src="https://via.placeholder.com/110" alt="logo">
-        </div>
-        <nav class="nav">
-            <ul class="menu">
+
+        <video src="/img/Biology DNA 4K Video Background Video - Loop Motion.mp4" autoplay loop muted plays-inline class="bg-video" type="video/mp4"></video>
+      
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul>
+
                 <li><a href="#homepage">HOME</a></li>
                 <li><a href="#section-1">LOAD FILES</a></li>
                 <li><a href="#section-2">ABOUT THE APP</a></li>
@@ -28,21 +32,25 @@
                 <li><a href="#section-4">CONTACT</a></li>
             </ul>
         </nav>
+       
     </header>
 
     <!-- Homepage-->
     <!-- Esto sería lo primero que ve el user al entrar al sitio -->
     <!-- Debe contener una imagen o video de fondo, y un botón para ir a la sección siguiente-->
+    
     <section class="homepage">
-        <video src="/img/Biology DNA 4K Video Background Video - Loop Motion.mp4" autoplay loop mute></video>
         <div class="titulo">
-            <h1>Nombre de la app</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, ducimus. Molestiae cupiditate
-                odio molestias corrupti ut? Odit delectus eius consequatur!</p>
+            <div class="box">>
+                <h1>Finding ICPs has never been easier</h1>
+                <p>With our novel algorithm, you will find inhibitory codon pairs with ease. Forget about creating complex solutions, we've already done it for you.</p>
+                <a href="#section-1">Start</a>
+            </div>
         </div>
-
     </section>
-
+    </div>
+    
+    <main>
     <!-- Section 1: Carga de archivos -->
     <section id="section-1">
         <h2>Carga de archivos </h2>
@@ -55,21 +63,24 @@
         <div id="preview"></div>
 
         <script src="/js/index.js"></script>
-
-        
     </section>
 
     <!-- Section 2: Descripción del funcionamiento de la app-->
     <section id="section-2">
-        <div class="desc">
-            <h2>Descripción del funcionamiento de la app </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio
-                adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam atque rem delectus?</p> 
-            <img src="https://via.placeholder.com/300" alt="imagen">
-        </div>
-
+        <article class="descripcion">
+            <h2>How does the app work?</h2>
+            <p>Esta app calcula las tasas de conservación de codones y pares de codones a través de especies vinculadas (como aquellas agrupadas en un mismo género). Para ello, parte de uno o múltiples archivos MSA que contienen secuencias de genes homólogos y procede a realizar dos tipos de cálculos: </p>
+            <ol>
+                <li>Cuántas veces aparece determinado codon o par de codones en la secuencia de la especie de referencia</li>
+                <li>Cuántas veces ese codon o par codónico fue conservado a través de las especies vinculadas (definiendo la conservación como </li>
+            </ol>
+            <p>Tomando como especie de referencia aquella localizada en la primera línea del archivo MSA.</p>
+            <p>El algoritmo, además, calcula las tasas de conservación en ORF+1 y ORF+2, en caso de que desee verificar si la tasa de conservación se debe a la posición del codón o par codónico y no a la secuencia de los mismos.</p>
+            <p>Si desea conocer en más detalle el funcionamiento del algoritmo, o realizar contribuciones al mismo, puede visitar <a href="http://github.com/fx-biocoder/Conservacion-de-codones-raros">el repositorio en Github.</a> en el cual se encuentran alojados los componentes del mismo</p>
+        </article>
     </section>
-
+    </main>
+ 
     <!-- Section 3: Integrantes del equipo-->
     <section id="section-3">
         <div class="int">
@@ -77,69 +88,15 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti facere voluptatibus atque odio
                 adipisci sit excepturi, quo, voluptas quia assumenda ex, ea iusto ratione impedit repellat? Quisquam
                 atque rem delectus?</p>
-            <div class="info">
-                <div class="foto">
-                <img src="https://previews.123rf.com/images/yupiramos/yupiramos1608/yupiramos160818977/61416094-perfil-de-conexi%C3%B3n-de-la-silueta-del-hombre-persona-lado-ilustraci%C3%B3n-vectorial-corporativa.jpg?fj=1" alt="Foto Integrante 1">
-            </div>
-            <div class="pie">
-                <p>Nombre 1</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-            </div>
-            <div class="info">
-                <div class="foto">
-                    <img src="https://previews.123rf.com/images/yupiramos/yupiramos1608/yupiramos160818977/61416094-perfil-de-conexi%C3%B3n-de-la-silueta-del-hombre-persona-lado-ilustraci%C3%B3n-vectorial-corporativa.jpg?fj=1" alt="Foto Integrante 2">
-                </div>
-                <div class="pie">
-                    <p>Nombre 2</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div class="info">
-                <div class="foto">
-                    <img src="https://previews.123rf.com/images/yupiramos/yupiramos1608/yupiramos160818977/61416094-perfil-de-conexi%C3%B3n-de-la-silueta-del-hombre-persona-lado-ilustraci%C3%B3n-vectorial-corporativa.jpg?fj=1" alt="Foto Integrante 3">
-                </div>
-                    <div class="pie">
-                        <p>Nombre 3</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
-
-    </section>
 
     <!-- Footer - Contacto, redes sociales, quizás incluir un formulario -->
     <footer>
         <div class="foot">
-            <h3>Copyright 2022</h2>  
-            <h3>Contacto</h3>     
-            <div class="container py-5">
-                <form action="#" class="row justify-content-center">
-                    <h2>Cualquier duda, consultanos!</h2>
-                    <div class="form-group col-md-3">
-                        <input type="text" placeholder="Nombre" class="form-control">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <input type="text" class="form-control" placeholder="Apellido">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <input type="text" class="form-control" placeholder="Numero de telefono">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="coments" rows="3" placeholder="Escriba su consulta..."></textarea>
-                    </div>
-                        <div>
-                            <button class="btn btn-primary col-md-2">Solicita más información</button>
-                        </div>
-                </form>
-            </div>
-        </div>
-    </footer>
+            <h3>Copyright 2022</h3>
+                <p>Contacto</p>
+    
+
 
 </body>
 </html>
