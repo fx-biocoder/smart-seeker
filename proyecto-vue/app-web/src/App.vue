@@ -1,4 +1,4 @@
-<template>
+node <template>
   <div id="app">
     <App_Homepage />
     <app_section_1 />

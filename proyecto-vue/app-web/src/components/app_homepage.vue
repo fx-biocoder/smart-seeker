@@ -1,12 +1,12 @@
 <template>
-  <div id="App_Homepage">
+  <div id="app_homepage">
     <div class="portada">
     <header class="header">
 
-        <video src="/img/Biology DNA 4K Video Background Video - Loop Motion.mp4" autoplay loop muted plays-inline class="bg-video" type="video/mp4"></video>
+        <video src="" autoplay loop muted plays-inline class="bg-video" type="video/mp4"></video>
       
         <nav>
-            <img src="img/logo.png" class="logo">
+            <img src="" class="logo">
             <ul>
                 <li><a href="#homepage">HOME</a></li>
                 <li><a href="#section-1">LOAD FILES</a></li>
@@ -37,7 +37,7 @@
 
 <script>
 export default {
-    name:'App_Homepage',
+    name:'app_homepage',
     data () {
         return {
 
