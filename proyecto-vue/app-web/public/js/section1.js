@@ -135,3 +135,5 @@ async function uploadFile(file, id){
     }
 
 }
+
+console.log("todo ok.")

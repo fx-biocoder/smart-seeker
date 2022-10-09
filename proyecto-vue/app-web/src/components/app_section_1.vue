@@ -19,7 +19,7 @@
         name: 'app_section_1',
         mounted() {
             let section1_script = document.createElement('script')
-            section1_script.setAttribute('src', '/src/components/js/section1.js')
+            section1_script.setAttribute('src', '/js/section1.js')
             document.head.appendChild(section1_script)
         }
         }
