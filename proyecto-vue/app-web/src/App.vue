@@ -1,6 +1,5 @@
-<template>
+node <template>
   <div id="app">
-    <Mi_Componente />
     <App_Homepage />
     <app_section_1 />
     <app_section_2 />
@@ -10,7 +9,6 @@
 </template>
 
 <script>
-import Mi_Componente from './components/Mi_Componente.vue'
 import App_Homepage from './components/app_homepage.vue'
 import app_section_1 from './components/app_section_1.vue'
 import app_section_2 from './components/app_section_2.vue'
@@ -20,7 +18,6 @@ import app_section_4 from './components/app_section_4.vue'
 export default {
   name: 'app',
   components: {
-    Mi_Componente,
     App_Homepage,
     app_section_1,
     app_section_2,
