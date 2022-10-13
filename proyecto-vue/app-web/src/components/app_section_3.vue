@@ -5,19 +5,21 @@
             <div class="titulo">
                 <h2>The Team</h2>
             </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/100" alt="Facu">
-                <h4>Facundo Martinez</h4>
-                <h5>Titulo</h5>
+            <article class="team">
+                <div class="card">
+                    <img src="https://via.placeholder.com/100" alt="Facu">
+                    <h4>Facundo Martinez</h4>
+                    <h5>Titulo</h5>
 
-            </div>
+                </div>
 
-            <div class="card">
-                <img src="https://via.placeholder.com/100" alt="Ale">
-                <h4>Alejandra R. de Cajal</h4>
-                <h5>Titulo</h5>
+                <div class="card">
+                    <img src="https://via.placeholder.com/100" alt="Ale">
+                    <h4>Alejandra R. de Cajal</h4>
+                    <h5>Titulo</h5>
 
-            </div>
+                </div>
+            </article>
 
         </section>
     </div>
@@ -37,24 +39,29 @@
 <style>
 #section-3 {
     background-color: #D8D2CB;
-    display: flex;
-    flex-direction: row;
-  margin: 2%;
+    margin: 2%;
 }
 
 .titulo {
     text-align: center;
     margin: 2%;
+    padding: 1%;
 }
 
 img {
     border-radius: 50%;
 }
 
-.card {
+.team {
     display: flex;
     flex-direction: row;
     margin: 2%;
+    justify-content: space-around;
 }
 
+h4, h5 {
+    margin: 2%;
+    padding: 1%;
+   
+}
 </style>
