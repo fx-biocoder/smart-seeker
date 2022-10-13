@@ -1,50 +1,58 @@
 <template>
-  <div id="app_homepage">
-    <div class="portada">
-    <header class="header">
+    <div id="app_homepage">
+        <div class="portada">
+            <header class="header">
+                <div id="bio">
+                    <video v-bind:src="video" alt="imagen" autoplay loop muted></video>
+                </div>
+                <nav>
+                    <img src="../../public/img/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#homepage">HOME</a></li>
+                        <li><a href="#section-1">LOAD FILES</a></li>
+                        <li><a href="#section-2">ABOUT THE APP</a></li>
+                        <li><a href="#section-3">THE TEAM</a></li>
+                        <li><a href="#section-4">CONTACT</a></li>
+                    </ul>
+                </nav>
 
-        <video src="" autoplay loop muted plays-inline class="bg-video" type="video/mp4"></video>
-      
-        <nav>
-            <img src="" class="logo">
-            <ul>
-                <li><a href="#homepage">HOME</a></li>
-                <li><a href="#section-1">LOAD FILES</a></li>
-                <li><a href="#section-2">ABOUT THE APP</a></li>
-                <li><a href="#section-3">THE TEAM</a></li>
-                <li><a href="#section-4">CONTACT</a></li>
-            </ul>
-        </nav>
-       
-    </header>
+            </header>
 
-    <!-- Homepage-->
-    <!-- Esto sería lo primero que ve el user al entrar al sitio -->
-    <!-- Debe contener una imagen o video de fondo, y un botón para ir a la sección siguiente-->
-    
-    <section class="homepage">
-        <div class="titulo">
-            <div class="box">>
-                <h1>Finding ICPs has never been easier</h1>
-                <p>With our novel algorithm, you will find inhibitory codon pairs with ease. Forget about creating complex solutions, we've already done it for you.</p>
-                <a href="#section-1">Start</a>
-            </div>
+            <!-- Homepage-->
+            <!-- Esto sería lo primero que ve el user al entrar al sitio -->
+            <!-- Debe contener una imagen o video de fondo, y un botón para ir a la sección siguiente-->
+
+            <section class="homepage">
+                <div class="titulo">
+                    <div class="box">>
+                        <h1>Finding ICPs has never been easier</h1>
+                        <p>With our novel algorithm, you will find inhibitory codon pairs with ease. Forget about
+                            creating complex solutions, we've already done it for you.</p>
+                        <a href="#section-1">Start</a>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
     </div>
-  </div>
 </template>
 
 <script>
-export default {
-    name:'app_homepage',
-    data () {
-        return {
 
+
+export default {
+    name: 'app_homepage',
+    data() {
+        return {
+            
         }
     }
+
+
 }
+
 </script>
+
+
 
 <style>
 .portada {
@@ -71,7 +79,9 @@ nav {
     opacity: 0.7;
 }
 
-nav .logo {width: 80px;}
+nav .logo {
+    width: 80px;
+}
 
 nav ul li {
     list-style: none;
