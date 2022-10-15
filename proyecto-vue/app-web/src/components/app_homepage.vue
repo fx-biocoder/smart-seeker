@@ -1,30 +1,16 @@
 <template>
   <div id="app_homepage">
+    <video autoplay loop muted>
+      <source src="../assets/video.mp4" type="video/mp4"/>
+    </video>
     <div class="portada">
-    <header class="header">
-
-        <video src="" autoplay loop muted plays-inline class="bg-video" type="video/mp4"></video>
-      
-        <nav>
-            <img src="" class="logo">
-            <ul>
-                <li><a href="#homepage">HOME</a></li>
-                <li><a href="#section-1">LOAD FILES</a></li>
-                <li><a href="#section-2">ABOUT THE APP</a></li>
-                <li><a href="#section-3">THE TEAM</a></li>
-                <li><a href="#section-4">CONTACT</a></li>
-            </ul>
-        </nav>
-       
-    </header>
-
     <!-- Homepage-->
     <!-- Esto sería lo primero que ve el user al entrar al sitio -->
     <!-- Debe contener una imagen o video de fondo, y un botón para ir a la sección siguiente-->
     
     <section class="homepage">
         <div class="titulo">
-            <div class="box">>
+            <div class="box">
                 <h1>Finding ICPs has never been easier</h1>
                 <p>With our novel algorithm, you will find inhibitory codon pairs with ease. Forget about creating complex solutions, we've already done it for you.</p>
                 <a href="#section-1">Start</a>
@@ -38,11 +24,6 @@
 <script>
 export default {
     name:'app_homepage',
-    data () {
-        return {
-
-        }
-    }
 }
 </script>
 
@@ -55,34 +36,6 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    opacity: 0.7;
-}
-
-nav .logo {width: 80px;}
-
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 40px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 17px;
 }
 
 .titulo {
@@ -118,25 +71,17 @@ nav ul li a {
     padding: 1vw;
 }
 
-.bg-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .bg-video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .bg-video {
-        width: auto;
-        height: 100%;
-    }
+video {
+  z-index: -100;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 </style>
