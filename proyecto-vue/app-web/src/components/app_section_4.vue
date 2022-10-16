@@ -303,25 +303,21 @@
     border-radius: 10px;
     box-shadow: 0 10px 10px rgb(201, 200, 200);
 }
-
 .nav2 {
     display: flex;
     justify-content: space-around;
     width: 50%;
     align-items: center;
 }
-
 ul {
     list-style: none;
 }
-
 a {
     font-size: 0.8rem;
     line-height: 2;
     color: white;
     text-decoration: none;
 }
-
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
@@ -332,9 +328,7 @@ textarea {
     border-radius: 5px;
     margin-top: 6px;
     margin-bottom: 16px;
-
 }
-
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     text-decoration: none;
@@ -345,13 +339,11 @@ input[type=submit] {
     border-radius: 50px;
     margin-top: 20px;
 }
-
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     background-color: #1C658C;
     color: white;
 }
-
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
@@ -359,6 +351,5 @@ input[type=submit]:hover {
     padding: 20%;
     width: 40%;
     color: rgb(255, 255, 255);
-
 }
 </style>
