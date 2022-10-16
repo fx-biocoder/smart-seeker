@@ -10,11 +10,8 @@
             </ul>
         </div>
 
-<<<<<<< Updated upstream
-=======
         
 
->>>>>>> Stashed changes
         <div class="container">
             <form action="action_page.php">
 
@@ -26,15 +23,6 @@
 
                 <label for="country">Country</label>
                 <select id="country" name="country">
-<<<<<<< Updated upstream
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-=======
                     <option>Select country</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Aland Islands</option>
@@ -292,7 +280,6 @@
 
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
->>>>>>> Stashed changes
 
                 <input type="submit" value="Submit">
 
@@ -305,24 +292,16 @@
 </template>
 
 <script>
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 </script>
 
 <style>
 .footer {
     background-color: #1C658C;
     margin: 2%;
-<<<<<<< Updated upstream
-    display: flex;
-=======
     padding: 5%;
     display: flex;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgb(201, 200, 200);
->>>>>>> Stashed changes
 }
 
 .nav2 {
@@ -337,25 +316,6 @@ ul {
 }
 
 a {
-<<<<<<< Updated upstream
-    font-size: 10px;
-    color: white;  
-    text-decoration: none;   
-}
-
-
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-=======
     font-size: 0.8rem;
     line-height: 2;
     color: white;
@@ -373,19 +333,10 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
 
->>>>>>> Stashed changes
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-<<<<<<< Updated upstream
-  background-color: #D8D2CB;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-=======
     text-decoration: none;
     display: inline-block;    
     font-size: 0.8rem;
@@ -393,29 +344,16 @@ input[type=submit] {
     padding: 5px 25px;
     border-radius: 50px;
     margin-top: 20px;
->>>>>>> Stashed changes
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-<<<<<<< Updated upstream
-  background-color: #45a049;
-=======
     background-color: #1C658C;
     color: white;
->>>>>>> Stashed changes
 }
 
 /* Add a background color and some padding around the form */
 .container {
-<<<<<<< Updated upstream
-  border-radius: 5px;
-  background-color: #1C658C;
-  padding: 10%;
-  width: 50%;
-}
-</style>
-=======
     border-radius: 5px;
     background-color: #1C658C;
     padding: 20%;
@@ -424,4 +362,3 @@ input[type=submit]:hover {
 
 }
 </style>
->>>>>>> Stashed changes

@@ -38,7 +38,6 @@ export default {
 }
 </script>
 
-<<<<<<< Updated upstream
 
 <style>
 * {
@@ -47,35 +46,15 @@ export default {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
-
-=======
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
->>>>>>> Stashed changes
 .descripcion {
   display: flex;
   flex-direction: row;
   margin: 2%;
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 .titulo {
   text-align: center;
   margin: 2%;
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 .col1, .col2 {
   
   flex-direction: row;
@@ -83,9 +62,5 @@ export default {
   margin: 2%;
   line-height: 1.6;
   flex: 0 1 auto;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 }
 </style>
