@@ -9,6 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+<<<<<<< Updated upstream
+=======
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+>>>>>>> Stashed changes
     "vue": "^3.2.40"
   },
   "devDependencies": {
