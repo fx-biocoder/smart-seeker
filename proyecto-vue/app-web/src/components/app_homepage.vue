@@ -77,7 +77,7 @@ video {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: 40%;
+  top: 30%; /* Cambiado de 40% a 30% (Ale 17/10)*/
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

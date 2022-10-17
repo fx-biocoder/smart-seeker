@@ -42,6 +42,7 @@
     padding: 5%;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgb(201, 200, 200);
+    background-image: none;
 }
 .titulo {
     text-align: center;
