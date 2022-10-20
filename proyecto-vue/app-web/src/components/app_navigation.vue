@@ -5,22 +5,22 @@
                 <img src="@/assets/logo.png" alt="">
             </div>
             <ul v-show="!mobile" class="navigation">
-                <li><router-link class="link" :to="{name: 'Home'}">HOME</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">LOAD FILES</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">ABOUT THE APP</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">THE TEAM</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">CONTACT US</router-link></li>
+                <li><router-link class= "link" to="/">HOME</router-link></li>
+                <li><router-link class="link" :to="{name: 'Load'}">LOAD FILES</router-link></li>
+                <li><router-link class="link" :to="{name: 'Info'}">ABOUT THE APP</router-link></li>
+                <li><router-link class="link" :to="{name: 'About'}">THE TEAM</router-link></li>
+                <li><router-link class="link" :to="{name: 'Contact us'}">CONTACT US</router-link></li>
             </ul>
             <div class="icon">
                 <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" :class="{'icon-active' : mobileNav}"></i>
             </div>
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
-                <li><router-link class="link" :to="{name: 'Home'}">HOME</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">LOAD FILES</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">ABOUT THE APP</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">THE TEAM</router-link></li>
-                <li><router-link class="link" :to="{name: ''}">CONTACT US</router-link></li>
+                    <li><router-link class="link" :to="{name: 'Home'}">HOME</router-link></li>
+                    <li><router-link class="link" :to="{name: 'Load'}">LOAD FILES</router-link></li>
+                    <li><router-link class="link" :to="{name: 'Info'}">ABOUT THE APP</router-link></li>
+                    <li><router-link class="link" :to="{name: 'About'}">THE TEAM</router-link></li>
+                    <li><router-link class="link" :to="{name: 'Contact us'}">CONTACT US</router-link></li>
             </ul>
             </transition>
         </nav>

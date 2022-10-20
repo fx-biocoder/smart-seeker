@@ -1,6 +1,5 @@
-node <template>
+<template>
   <div class="app">
-    <router-view />
     <App_Navigation />
     <App_Homepage />
     <app_section_1 />
@@ -8,6 +7,8 @@ node <template>
     <app_section_3 /> 
     <app_section_4 />
   </div>
+  
+  
 </template>
 
 <script>

@@ -71,6 +71,7 @@ export default {
     padding: 1vw;
 }
 
+/*
 video {
   z-index: -100;
   left: 50%;
@@ -83,5 +84,16 @@ video {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+*/
+
+video {
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 </style>
