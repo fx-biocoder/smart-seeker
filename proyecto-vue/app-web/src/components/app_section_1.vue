@@ -1,7 +1,7 @@
 
 <template>
   <div class="app_section_1">
-    <section id="section-1">  
+    <section id="section-1">
       <h2>Files Load </h2>
       <br>
       <div class="drop-area">
@@ -13,7 +13,27 @@
       <div id="preview"></div>
       <div class="instrucciones">
         <h5>Loading instructions</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius ab architecto, mollitia reprehenderit sit alias commodi quos consequatur eum ad eveniet. Facilis possimus fugit nisi dicta accusantium vero repudiandae?</p>
+        <div class="pasos">
+          <div class="uno">
+            <img src="@/assets/1.png" alt="1">
+            <img src="@/assets/click.png" alt="click">
+            <p>Click on "Select your files" button</p>
+          </div>
+
+          <div class="uno">
+            <img src="@/assets/2.png" alt="1">
+            <img src="@/assets/archivo.png" alt="file">
+            <p>Choose your .afa files</p>
+          </div>
+
+          <div class="uno">
+            <img src="@/assets/3.png" alt="1">
+            <img src="@/assets/nube.png" alt="cloud">
+            <p>Send your files</p>
+          </div>
+        </div>
+
+
       </div>
     </section>
   </div>
@@ -31,7 +51,6 @@ export default {
 </script>
 
 <style>
-
 #section-1 {
   background-color: #EEEEEE;
   display: flex;
@@ -49,9 +68,30 @@ export default {
 
 }
 
-.instrucciones {
-  width: 100%;
-  text-align: center;
+/* Formato para instrucciones*/
+.pasos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.uno {
+  display: flex;
+  flex-flow: column wrap;
+ 
+  
+}
+
+.uno p {
+  margin: 2%;
+  padding: 1%;
+  align-self: center;
+ 
+} 
+
+
+.instrucciones img {
+  width: 20%;
 }
 
 .instrucciones p {
