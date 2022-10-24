@@ -1,7 +1,7 @@
 
 <template>
   <div class="app_section_1">
-    <section id="section-1">
+    <section id="section-1">  
       <h2>Files Load </h2>
       <br>
       <div class="drop-area">
@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style>
+
 #section-1 {
   background-color: #EEEEEE;
   display: flex;
