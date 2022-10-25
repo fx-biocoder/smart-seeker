@@ -5,7 +5,7 @@
                 <img src="@/assets/logo.png" alt="">
             </div>
             <ul v-show="!mobile" class="navigation">
-                <li><router-link class= "link" to="/">HOME</router-link></li>
+                <li><router-link class= "link" :to="{name: 'Home'}">HOME</router-link></li>
                 <li><router-link class="link" :to="{name: 'Load'}">LOAD FILES</router-link></li>
                 <li><router-link class="link" :to="{name: 'Info'}">ABOUT THE APP</router-link></li>
                 <li><router-link class="link" :to="{name: 'About'}">THE TEAM</router-link></li>
@@ -88,7 +88,9 @@ header {
     width: 100%;
     position: fixed;
     transition: .5s ease all;
-    color: #fff
+    color: #fff;
+    top: 0;
+    
 }
 
 nav {

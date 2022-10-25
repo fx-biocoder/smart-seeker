@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import app_homepage from "../components/app_homepage.vue";
+import Home from "../components/app_homepage.vue";
 import Load from "../components/app_section_1.vue";
 import Algorithm from "../components/app_section_2.vue";
 import About from "../components/app_section_3.vue";
@@ -9,7 +9,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: app_homepage
+    component: Home
   },
   {
     path: "/load",

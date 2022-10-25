@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container page">
     <section id="section-2">
       <div class="titulo">
         <h2>How does the app work?</h2>
@@ -26,6 +26,9 @@
             visitar <a href="http://github.com/fx-biocoder/Conservacion-de-codones-raros">el repositorio en Github.</a>
             en el cual se encuentran alojados los componentes del mismo</p>
         </div>
+
+        <img :src=imgUrl alt="">
+        
       </article>
 
     </section>
@@ -33,8 +36,35 @@
 </template>
 
 <script>
+
+import axios from 'axios'
+
 export default {
-  name: 'app_section_2'
+  name: 'app_section_2',
+  data() {
+    return {
+      imagenes: null
+    }
+  },
+
+  mounted() {
+
+  let vue = this;
+  const imgUrl = 'https://picsum.photos/200/300'
+  axios 
+      .get(imgUrl)
+      .then(res => res.blob())
+      .then( function(response) {
+        try {
+          vue.imagenes = response.data;
+        }
+        catch(error) {
+          console.log(error);
+        }
+        }) 
+  },
+
+
 }
 </script>
 
@@ -47,12 +77,15 @@ export default {
   border-radius: 10px;
   box-shadow: 0 10px 10px rgb(201 200 200);
   background-image: none;
+  height: 90vh;
+  color: black;
 }
 .descripcion {
   display: flex;
   flex-direction: row;
   margin: 2%;
   flex-wrap: nowrap;
+  color: black;
 }
 .titulo {
   text-align: center;

@@ -1,6 +1,6 @@
 
 <template>
-    <div class="footer">
+    <div class="footer page">
         <div class="nav2">
             <ul>
                 <li><a href="#homepage">HOME</a></li>
