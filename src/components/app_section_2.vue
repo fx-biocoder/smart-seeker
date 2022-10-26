@@ -7,27 +7,22 @@
 
       <article class="descripcion">
         <div class="col1">
-          <p>Esta app calcula las tasas de conservación de codones y pares de codones a través de especies vinculadas
-            (como aquellas agrupadas en un mismo género). Para ello, parte de uno o múltiples archivos MSA que contienen
-            secuencias de genes homólogos y procede a realizar dos tipos de cálculos: </p>
+          <p>This app calculates the conservation rates of codons and codon pairs through linked species (like those from a common gender). For that purpose, the algorithm uses one or multiple MSA files
+            which contain aligned sequences of homologous genes and proceeds to perform the following calculations:
+          </p>
           <ol>
-            <li>Cuántas veces aparece determinado codon o par de codones en la secuencia de la especie de referencia
-            </li>
-            <li>Cuántas veces ese codon o par codónico fue conservado a través de las especies vinculadas (definiendo la
-              conservación como </li>
+            <li>How often does a determined codon or codon pair appear in the reference species sequence</li>
+            <li>How often has a codon or codon pair been conserved through linked species.</li>
           </ol>
-          <p>Tomando como especie de referencia aquella localizada en la primera línea del archivo MSA.</p>
+          <p>By taking as a reference species that which is located in the first line of the MSA file</p>
         </div>
         <div class="col2">
-          <p>El algoritmo, además, calcula las tasas de conservación en ORF+1 y ORF+2, en caso de que desee verificar si
-            la tasa de conservación se debe a la posición del codón o par codónico y no a la secuencia de los mismos.
-          </p>
-          <p>Si desea conocer en más detalle el funcionamiento del algoritmo, o realizar contribuciones al mismo, puede
-            visitar <a href="http://github.com/fx-biocoder/Conservacion-de-codones-raros">el repositorio en Github.</a>
-            en el cual se encuentran alojados los componentes del mismo</p>
+          <p>The algorithm also calculates the conservation rates in ORF+1 and ORF+2, in case you want to verify whether the conservation rate is due to the position of the codon or codon pair in the genome or the sequence itself.</p>
+          <p>Are you interested in knowing how the app works in more detail? Perhaps you want to make contributions to our work? Please check <a href="http://github.com/fx-biocoder/Conservacion-de-codones-raros">this Github repo</a>
+            in which you will find the files used for the analysis.</p>
         </div>
 
-        <img :src=imgUrl alt="">
+       
         
       </article>
 
@@ -37,39 +32,40 @@
 
 <script>
 
-import axios from 'axios'
-
 export default {
   name: 'app_section_2',
   data() {
     return {
-      imagenes: null
+      
     }
   },
-
+  /*
   mounted() {
-
+    
   let vue = this;
   const imgUrl = 'https://picsum.photos/200/300'
   axios 
       .get(imgUrl)
-      .then(res => res.blob())
-      .then( function(response) {
-        try {
-          vue.imagenes = response.data;
+      .then(function(response) {
+        /*const url = window.URL.createObjectURL(new Blob([response.data]));
+        const link = document.createElement('img');
+        link.src = url;
+        
+       vue.imagenes = response.data;
         }
-        catch(error) {
-          console.log(error);
-        }
-        }) 
-  },
-
-
+        )
+  }
+  */
 }
+
 </script>
 
 
 <style scoped>
+.container {
+  height: 90vh;
+  margin-top: 7vh;
+}
 #section-2 {
   background-color: white;
   margin: 2%;
@@ -77,8 +73,9 @@ export default {
   border-radius: 10px;
   box-shadow: 0 10px 10px rgb(201 200 200);
   background-image: none;
-  height: 90vh;
+  /*height: 80vh;*/
   color: black;
+  position: relative;
 }
 .descripcion {
   display: flex;
@@ -93,12 +90,17 @@ export default {
   padding: 1%;
   flex-grow: 4;
 }
-/* .col1,
+.col1,
 .col2 {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 2%;
   line-height: 1.6;
   flex: 0 1 auto;
-} */
+} 
+
+.col2 a {
+  color: blue;
+  font-size: medium;
+}
 </style>

@@ -7,7 +7,7 @@
             </div>
             <article class="team">
                 <div class="card">
-                    <img class="foto" src="https://via.placeholder.com/200x227" alt="Facu">
+                    <img class="foto" src="@/assets/facu.jpg" alt="Facu">
                     <h3>Facundo Martinez</h3>
                     <h4>Data Analyst | Python Developer</h4>                    
                     <h4>Bioinformatician</h4>
