@@ -1,6 +1,5 @@
-
 <template>
-    <div class="footer page">
+    <div class="footer">
         <div class="nav2">
             <ul>
                 <li><a href="#homepage">HOME</a></li>
@@ -12,42 +11,82 @@
         </div>
 
         <div class="container">
-            <form action="action_page.php">
+            <div class="root">
+                <h2>Contact Us</h2> <br>
+                <p>
+                    <input type="text" placeholder="Your Name" v-model="state.password.password" />
+                    <span v-if="v$.password.password.$error"> {{ v$.password.password.$errors[0].$message }} </span>
+                </p>
+                <p>
+                    <input type="text" placeholder="Last Name" v-model="state.password.confirm" />
+                    <span v-if="v$.password.password.$error"> {{ v$.password.password.$errors[0].$message }} </span>
+                </p>
 
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-
-            </form>
+                <p>
+                    <input type="text" placeholder="Email" v-model="state.email" />
+                    <span v-if="v$.email.$error"> {{ v$.email.$errors[0].$message }} </span>
+                </p>               
+               
+                <p>
+                    <textarea name="mensaje" id="mensaje" rows="6" placeholder="Your message..."></textarea>
+                </p>
+                <button @click="submitForm">Submit</button>
+            </div>
         </div>
-
-
     </div>
 
 </template>
 
 <script>
+import useValidate from '@vuelidate/core'
+import { required, email, minLength } from '@vuelidate/validators'
+import { reactive, computed } from 'vue'
+export default {
+    setup() {
+        const state = reactive({
+            email: '',
+            password: {
+                password: '',
+                confirm: '',
+            },
+        })
+        const rules = computed(() => {
+            return {
+                email: { required, email },
+                password: {
+                    password: { required, minLength: minLength(3) },
+                    confirm: { required, minLength: minLength(3) },
+                },
+            }
+        })
+        const v$ = useValidate(rules, state)
+        return {
+            state,
+            v$
+        }
+    },
+    methods: {
+        submitForm() {
+            this.v$.$validate() // checks all inputs
+            if (!this.v$.$error) {
+                // if ANY fail validation
+                alert('Thank you! We will contact you soon.')
+            } else {
+                alert('Form failed validation')
+            }
+        },
+    },
+}
 </script>
 
-<style scoped>
+<style>
 .footer {
     background-color: #1C658C;
     margin: 2%;
+    padding: 5%;
     display: flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgb(201, 200, 200);
 }
 .nav2 {
     display: flex;
@@ -59,39 +98,63 @@ ul {
     list-style: none;
 }
 a {
-    font-size: 10px;
-    color: white;  
-    text-decoration: none;   
+    font-size: 0.8rem;
+    line-height: 2;
+    color: white;
+    text-decoration: none;
 }
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    padding: 5px 0;
+    margin: 10px 0 5px 0;
+    width: 100%;
+    padding: 12px;
 }
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #D8D2CB;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+/* Botón de Send*/
+button {
+    background-color: white;
+    padding: 10px 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #1C658C;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
 }
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+/* Cuando el mouse pasa sobre el botón Send */
+button:hover {
+    background-color: #D8D2CB;
+    color: #1C658C;
 }
-/* Add a background color and some padding around the form */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 1em;
+} 
+/* Padding y color detrás de esta sección (footer) */
 .container {
-  border-radius: 5px;
-  background-color: #1C658C;
-  padding: 10%;
-  width: 50%;
+    border-radius: 5px;
+    background-color: #1C658C;
+    padding: 10%;
+    width: 100%;
+    color: rgb(255, 255, 255);
 }
+
+@media all and (max-width: 950px) {
+    .footer .nav2 {
+        display: none;
+    }
+}
+
+
 </style>
+

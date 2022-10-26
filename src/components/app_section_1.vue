@@ -3,11 +3,11 @@
   <div class="app_section_1 page">
 
     <section id="section-1">
-        <h2>Carga de archivos </h2>
+        <h2>Load MSA files</h2>
         <div class="drop-area">             
-            <h2>Arrastre y suelte archivos</h2>
-            <span>O</span>
-            <button>Seleccione sus archivos</button>
+            <h2>Drag and Drop your files</h2>
+            <span>OR</span>
+            <button>Select your files</button>
             <input type="file" accept="text/*,.afa" name="" id="input-file" hidden multiple>
         </div>
         <div id="preview"></div>
@@ -93,6 +93,7 @@
 .instrucciones p {
   font-size: 1rem;
 }
+
 .drop-area {
   border: 5px dashed #ddd;
   height: 50%;
