@@ -1,5 +1,5 @@
 <template>
-  <div id="app_homepage">
+  <div id="app_homepage" class="page">
     <video autoplay loop muted>
       <source src="../assets/video.mp4" type="video/mp4"/>
     </video>
@@ -13,7 +13,9 @@
             <div class="box">
                 <h1>Finding ICPs has never been easier</h1>
                 <p>With our novel algorithm, you will find inhibitory codon pairs with ease. Forget about creating complex solutions, we've already done it for you.</p>
-                <a href="#section-1">Start</a>
+                <router-link class="link" :to="{name: 'Load'}">Run SmartSeeker</router-link>
+                
+                
             </div>
         </div>
     </section>
@@ -22,8 +24,9 @@
 </template>
 
 <script>
+
 export default {
-    name:'app_homepage',
+    name: "app_homepage",
 }
 </script>
 
@@ -52,7 +55,7 @@ export default {
     color: white;
 }
 
-.titulo a {
+.titulo .link {
     text-decoration: none;
     display: inline-block;
     color: rgb(255, 255, 255);
@@ -61,16 +64,18 @@ export default {
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .box {
     background-color: #000;
     color: #fff;
     opacity: 0.7;
-    width: 98vw;
+    width: 100%;
     padding: 1vw;
 }
 
+/*
 video {
   z-index: -100;
   left: 50%;
@@ -83,5 +88,28 @@ video {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+*/
+
+video {
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media all and (max-width: 480px) {
+    .box h1 {
+        font-size: 25px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .box p {
+        font-size: 15px;
+    }
 }
 </style>
