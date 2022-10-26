@@ -22,6 +22,9 @@
             in which you will find the files used for the analysis.</p>
         </div>
 
+        <div class="imagen">
+
+        </div>
        
         
       </article>
@@ -31,7 +34,18 @@
 </template>
 
 <script>
+/*
+const api = 'https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ'
+const target = document.getElementsByClassName('imagen');
+function fetchImage() {
+  fetch(api)
+  .then(response => response.json())
+  .then(data => {target.innerHTML = `<img src="${data.file}"/>`;
+    })
+}
 
+fetchImage()
+*/
 export default {
   name: 'app_section_2',
   data() {
