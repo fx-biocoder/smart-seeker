@@ -23,11 +23,16 @@ export default {
   display: none;
 }
 
+@font-face {
+  font-family: "Ubuntu Light 300";
+  src: url("@/assets/Ubuntu-Light.ttf") format("truetype");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu Light 300', sans-serif;
   font-weight: 400;
 }
 

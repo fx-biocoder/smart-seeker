@@ -13,6 +13,7 @@
         <div id="preview"></div>
         <div class="instrucciones">
         <h5>Loading instructions</h5>
+        <br />
         <div class="pasos">
           <div class="uno">
             <img src="@/assets/1.png" alt="1">
@@ -92,6 +93,16 @@
 }
 .instrucciones p {
   font-size: 1rem;
+}
+
+.instrucciones[n+1] {
+  display: flex;
+  justify-content: center;
+}
+
+.instrucciones h5 {
+  display: flex;
+  justify-content: center;
 }
 
 .drop-area {
