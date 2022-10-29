@@ -153,6 +153,51 @@
 .failure {
   color: #ff0000;
 }
+
+@media screen and (max-width:544px) {
+  .pasos {
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vw;
+  }
+
+  .uno {
+    align-self: center;
+    width: 50%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .instrucciones {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h5 {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+#section-1 {
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+} 
+
+@media screen and (min-width:992px) {
+  #section-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+  }
+
+
+}
+
 @media all and (max-width: 800px) {
     .drop-area h2 {
         font-size: 27px;
