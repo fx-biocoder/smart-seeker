@@ -10,6 +10,9 @@
             </ul>
         </div>
 
+        
+        
+
         <div class="container">
             <div class="root">
                 <h2>Contact Us</h2> <br>
@@ -31,6 +34,10 @@
                     <textarea name="mensaje" id="mensaje" rows="6" placeholder="Your message..."></textarea>
                 </p>
                 <button @click="submitForm">Submit</button>
+            </div>
+
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.0513020869403!2d55.46609209745649!3d-4.635146269566025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22e029b96bf08b7d%3A0x467b15d393ad87c4!2sISPC%20Seychelles!5e0!3m2!1ses-419!2sar!4v1667010430763!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -87,6 +94,12 @@ export default {
     display: flex;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgb(201, 200, 200);
+    justify-content: space-around;
+}
+
+.footer .mapa {
+    display: flex;
+    justify-content: center;
 }
 .nav2 {
     display: flex;
@@ -148,6 +161,7 @@ textarea {
     width: 100%;
     color: rgb(255, 255, 255);
 }
+
 
 @media all and (max-width: 950px) {
     .footer .nav2 {
