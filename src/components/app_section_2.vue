@@ -20,11 +20,6 @@
           <p>Are you interested in knowing how the app works in more detail? Perhaps you want to make contributions to our work? Please check <a href="http://github.com/fx-biocoder/Conservacion-de-codones-raros">this Github repo</a>
             in which you will find the files used for the analysis.</p>
         </div>
-        <!--
-        <div class="col2">
-          
-        </div>
-        -->        
       </article>
 
     </section>
@@ -32,18 +27,6 @@
 </template>
 
 <script>
-/*
-const api = 'https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ'
-const target = document.getElementsByClassName('imagen');
-function fetchImage() {
-  fetch(api)
-  .then(response => response.json())
-  .then(data => {target.innerHTML = `<img src="${data.file}"/>`;
-    })
-}
-
-fetchImage()
-*/
 export default {
   name: 'app_section_2',
   data() {
@@ -88,7 +71,25 @@ export default {
   flex-grow: 4;
 }
 
+.titulo h2 {
+  font-weight: bolder;
+}
+
 .col1 a {
   color: blue;
+}
+
+
+.col1 p {
+  margin: 5px;
+  padding: 10px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.col1 ol {
+  line-height: 20px;
+  margin: 5px;
+  text-align: justify;
 }
 </style>

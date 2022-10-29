@@ -48,11 +48,4 @@ export default {
 }
 
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
-
-/*
-  .page {
-    position: fixed;
-    width: inherit;
-  }
-*/
 </style>
